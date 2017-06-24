@@ -1,4 +1,4 @@
-# phalcon3.0
+# phalcon3.2 layui1.09 权限
 
 ## 安装phalcon方法 ##
 ~~~
@@ -14,6 +14,7 @@ extension=phalcon.so
 ~~~
 git clone https://github.com/aizxin/blog.git XXX
 cd XXX
+composer install
 cp .env.example .env
 ~~~
 * 修改.env中的 DB配置
@@ -68,5 +69,7 @@ www  WEB部署目录（或者子目录）
 *禁止渲染试图 $this->view->disable();
 
 ## 改包 ##
+* 3amprogrammer/phalcon-roles 权限包
 * 245行 $builder->columns('DISTINCT p.*');
+* 248行后加入 $builder->orderBy('p.issort  asc');
 
