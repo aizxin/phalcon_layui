@@ -22,7 +22,7 @@
 <script type="text/javascript" src="{{ static_url('/admin/plugin/vue2/vue.min.js') }}"></script>
 <script type="text/javascript">
 window.conf ={
-    APP:'<?php echo env("APP_URL"); ?>'
+    APP:'<?php echo "http://".$_SERVER["HTTP_HOST"];?>'
 };
 </script>
 {% block js %}{% endblock %}
